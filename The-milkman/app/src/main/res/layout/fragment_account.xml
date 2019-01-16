@@ -1,0 +1,200 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:clipToPadding="false"
+android:fillViewport="false"
+android:background="@android:color/white"
+app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingTop="24dp"
+    android:paddingRight="8dp"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editAccountTextView"
+            fontPath="fonts/Whitney-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Edit account details"
+            android:textSize="20sp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            android:text="Please provide accurate details"
+            android:textSize="@dimen/slide_desc" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/nameUpdateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter your name"
+            android:inputType="textCapWords"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            android:visibility="visible"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="4sp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/colorPrimary" />
+
+
+        <TextView
+            fontPath="fonts/Whitney-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Address"
+            android:textSize="@dimen/slide_desc"
+            tools:ignore="MissingPrefix" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/firstAddressUpdateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Door No., Floor, Flat No."
+            android:inputType="textCapWords"
+            android:visibility="visible"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAnimating="true"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            app:met_floatingLabelPadding="4sp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/colorPrimary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/secondAddressUpdateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Street Address"
+            android:inputType="textCapWords"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            android:visibility="visible"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="4sp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/colorPrimary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/thirdAddressUpdateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            android:hint="Area Address"
+            android:inputType="textCapWords"
+            android:visibility="visible"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAnimating="true"
+            app:met_floatingLabelPadding="4sp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView3"
+            fontPath="fonts/Whitney-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Default Requirement (in litres) (default amount delivered if requirement is not changed in the CHANGE tab)"
+            android:textSize="@dimen/slide_desc"
+            tools:ignore="MissingPrefix" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/nppp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter default requirement"
+            android:inputType="numberDecimal"
+            android:visibility="visible"
+            app:met_errorColor="@android:color/holo_red_light"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelAnimating="true"
+            fontPath="fonts/Whitney-Medium.ttf"
+            tools:ignore="MissingPrefix"
+            app:met_floatingLabelPadding="4sp"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/submitUpdates"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="UPDATE ACCOUNT"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            fontPath="fonts/Whitney-Bold.ttf"
+            android:theme="@style/buttonPrimaryCustom"
+            tools:ignore="MissingPrefix"
+             />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
